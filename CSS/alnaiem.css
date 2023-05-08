@@ -395,12 +395,24 @@ article:before {
 }
 .to-banner {
     max-height: 551px;
-    height: 380px;
+    height: 387px;
     width: 100%;
     position: relative;
     background: url(../imegs/p.jpg) no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    background-position: center;
 }
+@media (max-width: 992px) {
+    .to-banner {
+        background-size: cover;
+    }
+} 
+@media (max-width: 767px) {
+    .to-banner {
+        background-size: 100%;
+        height: 180px;
+    }
+} 
 .slideshow {
     width: 100%;
     height: 100%;
@@ -539,7 +551,8 @@ Section {
 }
 .services {
     position: relative;
-    top: 11px;
+    top: 12px;
+    background-color: #bf6d36;
 }
 .services:before {
     background-repeat: repeat-x;
@@ -587,13 +600,25 @@ Section {
     line-height: 29px;
 }
 .services .ser-1 .last {
-    margin-top: 63px;
+    /* margin-top: 63px; */
     color: #fff;
+    position: relative;
+    top: 38px;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
 }
 .last .b-l {
     color: #fff;
+}
+.services .ser-1 > h1 {
+    color: #fff;
+}
+.services .ser-1 > p > span {
+    text-align: center;
+    /* justify-content: center; */
+    display: inline-flex;
+    padding: 0 23px;
 }
 /* Start Goal  */
 .gole, .map {
@@ -702,7 +727,7 @@ footer {
     position: absolute;
     background: linear-gradient(to right, #2d0b00, #00093c);
     padding: 100px 0 30px;
-    border-top-right-radius: 125px;
+    /* border-top-right-radius: 125px; */
     color: #fff;
     font-size: 13px;
     line-height: 20px;
