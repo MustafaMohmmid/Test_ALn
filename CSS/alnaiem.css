@@ -394,19 +394,13 @@ article:before {
     padding: 10px;
 }
 .to-banner {
-    max-height: 551px;
-    height: 387px;
+    height: 689px;
     width: 100%;
     position: relative;
     background: url(../imegs/p.jpg) no-repeat;
-    /* background-size: cover; */
+    background-size: cover;
     background-position: center;
 }
-@media (max-width: 992px) {
-    .to-banner {
-        background-size: cover;
-    }
-} 
 @media (max-width: 767px) {
     .to-banner {
         background-size: 100%;
@@ -613,6 +607,7 @@ Section {
 }
 .services .ser-1 > h1 {
     color: #fff;
+    text-align: center;
 }
 .services .ser-1 > p > span {
     text-align: center;
